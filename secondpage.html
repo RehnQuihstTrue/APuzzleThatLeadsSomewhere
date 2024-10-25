@@ -1,0 +1,81 @@
+<a href="index.html">Return</a>
+<a href="thirdpage.html">Third Page</a>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Look at website already</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #a30303;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+      .gallery-container {
+        max-width: 1200px;
+        padding: 20px;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+      }
+      .gallery-item {
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 1s ease;
+      }
+      .gallery-item img:hover {
+        transform: scale(1.1);
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: #333;
+        border-radius: 5px;
+        margin: 10px;
+      }
+      a:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery-container">
+      <h1>Just some pictures.</h1>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="image(1).png" alt="Gallery Image 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="image(2).png" alt="Gallery Image 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="image(3).png" alt="Gallery Image 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="image(4).png" alt="Gallery Image 4" />
+        </div>
+        <div class="gallery-item">
+          <img src="image(5).png" alt="Gallery Image 5" />
+        </div>
+        <div class="gallery-item">
+          <img src="image(6).png" alt="Gallery Image 6" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
